@@ -1,4 +1,4 @@
-package com.keerthi.designpatterns;
+package com.design.patterns;
 
 /**
  * Hello world!
