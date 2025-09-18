@@ -4,6 +4,11 @@ public class Truck implements Builder {
 
 	private String brandName;
 	private Product product;
+	
+	public Truck(String brandName) {
+		this.brandName = brandName;
+		this.product = new Product();
+	}
 
 	@Override
 	public void buildBody() {
