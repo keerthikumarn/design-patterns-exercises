@@ -21,8 +21,8 @@ public class RobotBody {
 	public void destroyHands() {
 		System.out.println(" The robot's hands are destroyed.");
 	}
-	
-	public void destroyRemainingParts(){
+
+	public void destroyRemainingParts() {
 		System.out.println(" The robot's remaining parts are destroyed.");
 	}
 }
