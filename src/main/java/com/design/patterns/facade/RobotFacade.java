@@ -33,5 +33,23 @@ public class RobotFacade {
 		System.out.println("A Robonaut Robot is created.");
 		System.out.println();
 	}
+	
+	public void destoryMilanoRobot() {
+		System.out.println("Initiating the destruction of a Milano Robot.");
+		robotHands.resetMilanoHands();
+		robotBody.destroyRemainingParts();
+		RobotBody.destroyRobot();
+		System.out.println("Milano Robot is destroyed.");
+		System.out.println();
+	}
+	
+	public void destoryRobonautRobot() {
+		System.out.println("Initiating the destruction of a Robonaut Robot.");
+		robotHands.resetRobonautHands();
+		robotBody.destroyRemainingParts();
+		RobotBody.destroyRobot();
+		System.out.println("Robonaut Robot is destroyed.");
+		System.out.println();
+	}
 
 }
