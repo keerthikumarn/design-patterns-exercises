@@ -4,7 +4,7 @@ public class GoalNotifier implements FitnessDataObserver {
 
 	private final int stepGoal = 10000;
 	private boolean goalReached = false;
-	
+
 	@Override
 	public void update(FitnessData data) {
 		if (data.getSteps() >= stepGoal && !goalReached) {
@@ -14,6 +14,10 @@ public class GoalNotifier implements FitnessDataObserver {
 		} else if (data.getSteps() < stepGoal && goalReached) {
 			goalReached = false;
 		}
+	}
+
+	public void reset() {
+		goalReached = false;
 	}
 
 }
